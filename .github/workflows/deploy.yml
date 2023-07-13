@@ -26,8 +26,8 @@ jobs:
 
     - name: Building docker
 
-      run: docker image build . -t "${{ secrets.DOCKER_HUB_USERNAME }}"/main:mltb
+      run: docker image build . -t "${{ secrets.DOCKER_HUB_USERNAME }}"/main:wzml
 
     - name: Pushing docker to docker.io
 
-      run: docker push "${{ secrets.DOCKER_HUB_USERNAME }}"/main:mltb
+      run: docker push "${{ secrets.DOCKER_HUB_USERNAME }}"/main:wzml
